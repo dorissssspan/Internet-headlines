@@ -21,7 +21,6 @@
       <!-- 加载完成-文章详情 -->
       <div v-else-if="article.title" class="article-detail">
         <h1 class="article-title">{{ article.title }}</h1>
-
         <!--用户信息-->
         <van-cell class="user-info" center :border="false">
           <van-image
@@ -44,7 +43,6 @@
             v-model="article.is_followed"
           />
         </van-cell>
-
         <!--文章内容-->
         <div
           class="article-content markdown-body"

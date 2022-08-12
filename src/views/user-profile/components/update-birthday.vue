@@ -1,4 +1,5 @@
 <template>
+  <!--修改生日-->
   <div class="update-birthday">
     <van-datetime-picker
       v-model="currentDate"

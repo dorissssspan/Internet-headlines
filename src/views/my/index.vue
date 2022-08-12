@@ -34,13 +34,14 @@
     </div>
     <!-- 未登录 -->
     <div v-else class="header not-login">
-      <div class="login-btn" @click="$router.replace('/login')">
+      <div class="login-btn" @click="$router.push('/login')">
         <img class="mobile-img" src="../../assets/mobile.png" alt="">
         <span class="text">登录 / 注册</span>
       </div>
   </div>
+
     <van-cell slot="icon" icon="more-o" title="编辑资料" is-link to="/user/profile" />
-    <!-- van-cell class="mb-9" title="小智同学" is-link />-->
+
     <van-cell
       slot="icon"
       icon="bulb-o"

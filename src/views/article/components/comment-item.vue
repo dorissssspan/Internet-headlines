@@ -1,4 +1,5 @@
 <template>
+  <!-- 评论列表 -->
   <van-cell class="comment-item">
     <van-image
       slot="icon"
@@ -17,15 +18,14 @@
         @click="onComentLike"
       >{{comment.like_count >0 ?comment.like_count : '赞'}}</van-button>
     </div>
-
     <div slot="label">
       <p class="comment-content">{{comment.content}}</p>
       <div class="bottom-info">
         <span class="comment-pubdate">{{comment.pubdate | relativeTime}}</span>
-        <van-button
+       <!-- <van-button
           class="reply-btn"
           round
-        >回复 {{comment.reply_count}}</van-button>
+        >回复{{comment.reply_count}}</van-button>-->
       </div>
     </div>
   </van-cell>

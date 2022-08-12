@@ -1,4 +1,5 @@
 <template>
+  <!-- 评论发布模块 -->
   <div class="comment-post">
     <van-field
       class="post-field"

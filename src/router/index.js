@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import { getItem } from '@/utils/storage'
+// import { getItem } from '@/utils/storage'
 
 Vue.use(VueRouter)
 
@@ -12,15 +12,14 @@ const routes = [
   },
   {
     path: '/login',
-    component: () => import('@/views/login'),
-    beforeEnter: (to, from, next) => {
-      // 有token，不能去登录页，无token，需要用户“权限”才需要去登录页
-      if (getItem()?.length > 0) {
-        next('/home')
-      } else {
-        next() // 其他情况放行
-      }
-    }
+    component: () => import('@/views/login')
+    // beforeEnter (to, from, next) {
+    //   if (getItem()?.length > 0) {
+    //     next('/home')
+    //   } else {
+    //     next()
+    //   }
+    // }
   },
   {
     path: '/layout',
@@ -63,10 +62,10 @@ const router = new VueRouter({
 // 全局前置守卫（在路由发生真正跳转之前，执行此函数）
 // router.beforeEach((to, from, next) => {
 //   // 有token，不能去登录页，无token，需要用户“权限”才需要去登录页
-//   if (getItem()?.length > 0 && to.path === '/login') {
-//     next(false)
+//   if (setItem()?.length > 0 && to.path === '/login') {
+//     next('/home')
 //   } else {
-//     next() // 其他情况放行
+//     next()
 //   }
 // })
 

@@ -1,4 +1,5 @@
 <template>
+  <!--修改性别-->
   <div class="update-gender">
     <van-picker
       title="设置性别"

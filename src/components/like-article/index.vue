@@ -1,4 +1,5 @@
 <template>
+  <!--文章详情-点赞-->
   <van-icon
     :color="value === 1 ? '#6db4fb' : '#777'"
     :name="value === 1 ? 'good-job' : 'good-job-o'"

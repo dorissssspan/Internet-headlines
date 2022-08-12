@@ -1,4 +1,5 @@
 <template>
+  <!--修改头像-->
   <div class="update-photo">
     <img class="img" :src="img" ref="img">
     <div class="toolbar">
@@ -65,7 +66,6 @@ export default {
         // 如果接口要求 Content-Type 是 multipart/form-data，必须传递formdata对象 ↓
         const formData = new FormData()
         formData.append('photo', blob)
-
         const { data } = await updateUserPhoto(formData)
         // 关闭弹出层
         this.$emit('close')
@@ -73,6 +73,7 @@ export default {
         this.$emit('update-photo', data.data.photo)
         this.$toast.success('更新成功')
       } catch (err) {
+        console.log(err)
         this.$toast.fail('头像更新失败')
       }
     }

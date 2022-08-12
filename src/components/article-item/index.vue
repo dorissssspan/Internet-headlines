@@ -1,4 +1,5 @@
 <template>
+  <!-- 列表项 -->
   <van-cell
     class="article-item"
     :to="`/article/${article.art_id}`"

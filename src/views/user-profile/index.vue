@@ -1,4 +1,5 @@
 <template>
+  <!-- 编辑资料 -->
   <div class="user-profile">
     <!-- 导航栏 -->
     <van-nav-bar
@@ -37,6 +38,18 @@
       :value="user.birthday"
       @click="isupdateBirthdayshow = true"
       is-link/>
+    <!-- 修改用户名 -->
+   <!-- <van-popup
+      v-model="isUpdateNameShow"
+      style="height: 100%;"
+      position="bottom"
+      >
+      <update-name
+        v-if="isUpdateNameShow"
+        @close="isUpdateNameShow = false"
+        v-model = "user.name"
+      />
+    </van-popup>-->
     <!-- 修改性别 -->
     <van-popup
       v-model="isupdateGendershow"
@@ -92,6 +105,7 @@ export default {
   data () {
     return {
       user: {}, // 个人信息
+      isUpdateNameShow: false,
       isupdateGendershow: false,
       isupdateBirthdayshow: false,
       isupdatePhotoshow: false,

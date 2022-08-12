@@ -1,4 +1,5 @@
 <template>
+  <!--搜索联想推荐-->
   <div class="search-suggestion">
     <van-cell
       :title="text"

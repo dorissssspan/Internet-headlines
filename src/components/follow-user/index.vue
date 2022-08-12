@@ -1,4 +1,5 @@
 <template>
+  <!--文章详情-关注模块-->
     <van-button
       v-if="value"
       class="follow-btn"

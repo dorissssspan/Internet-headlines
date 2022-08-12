@@ -1,4 +1,5 @@
 <template>
+  <!--搜索结果-->
   <div class="search-result">
     <van-list
       v-model="loading"

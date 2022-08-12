@@ -13,17 +13,12 @@
         error-text="请求失败，点击重新加载"
         @load="onLoad"
       >
-        <!--  显示对应频道列表信息   -->
+        <!--  显示对应频道列表信息-列表项   -->
         <article-item
           v-for="(article, index) in list"
           :key="index"
           :article="article"
         />
-        <!--<van-cell
-          v-for="(article, index) in list"
-          :key="index"
-          :title="article.title"
-        />-->
       </van-list>
     </van-pull-refresh>
   </div>

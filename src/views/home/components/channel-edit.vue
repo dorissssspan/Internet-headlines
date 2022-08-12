@@ -1,4 +1,5 @@
 <template>
+  <!-- 频道编辑 -->
   <div class="channel-edit">
     <!-- 我的频道 -->
     <van-cell :border="false">

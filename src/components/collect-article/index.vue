@@ -1,4 +1,5 @@
 <template>
+  <!--文章详情-收藏模块 -->
   <van-icon
     :color="value ? '#ffa500' : '#777'"
     :name="value ? 'star' : 'star-o'"

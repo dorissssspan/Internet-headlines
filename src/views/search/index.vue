@@ -1,8 +1,7 @@
 <template>
   <div class="search-container">
     <!-- 搜索栏  -->
-    <!-- form 标签且 action 不为空
-          即可在 iOS 输入法中显示搜索按钮-->
+    <!-- form 标签且 action 不为空，即可在 iOS 输入法中显示搜索按钮-->
     <form class="search-form" action="/">
       <van-search
         v-model="searchText"
